@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./pics/logo.jpg" type="image/x-icon">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h1 class="logo">Welcome</h1>
+        <ul class="nav-link">
+            <li class="ctn"><a href="#home">Home</a></li>
+            <li class="ctn"><a href="#about">About</a></li>
+            <li class="ctn"><a href="#service">Service</a></li>
+            <li class="ctn"><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="./pics/bars.jpg" alt="" class="menu-button">
+    </nav>
+
+    <!-- HOME -->
+    <header id="home">
+        <div class="header-content">
+            <h2>Selamat Datang Di Website Kami</h2>
+            <div class="line"></div>
+            <h1>PT Brancah Persada</h1>
+            <a href="#about" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="title">
+            <h1>Tentang Kami</h1>
+            <div class="line"></div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img src="./pics/image 1.jpg" alt="">
+                <h4>Judul</h4>
+                <p>Isinya terserah</p>
+            </div>
+            <div class="col">
+                <img src="./pics/image 2.jpg" alt="">
+                <h4>Judul</h4>
+                <p>Isinya terserah</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="service" id="service">
+        <div class="service-content">
+            <h1>Pelayanan Kami</h1>
+            <div class="line"></div>
+            <p>Kami Siap Melayani Anda Dengan Sepenuh Hati</p>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="row">
+            <div class="col">
+                <h1>Contact Kami</h1>
+                <div class="line"></div>
+                    <i class="fa-brands fa-instagram"> instagram</i>
+                    <i class="fa-brands fa-facebook"> facebook</i>
+                    <i class="fa-brands fa-twitter"> twitter</i>
+                    <i class="fa-brands fa-youtube"> youtube</i>
+                    <i class="fa-brands fa-whatsapp"> 08XX-XXXX-XXXX</i>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="./pics/image 4.jpg" alt="">
+                    <img src="./pics/image 5.jpg" alt="">
+                    <img src="./pics/image 6.jpg" alt="">
+                    <img src="./pics/image 7.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="footer">
+        <p>PT Brancah Persada Jl.kenangan NO.01 Surabaya</p>
+        <p>Copyright @2023 PT Brancah Persada</p>
+    </section>
+
+    <script>
+        const menubtn = document.querySelector('.menu-button')
+        const navlinks = document.querySelector('.nav-link')
+
+        menubtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+
+</body>
+
+</html>
